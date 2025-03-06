@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XIz2BtgWC0Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sonic\\RiderProjects\\geo\\backend\\src\\geo.Domain\\geo.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sonic\\.nuget\\packages\\csharpfunctionalextensions\\3.5.1\\csharpfunctionalextensions.3.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
