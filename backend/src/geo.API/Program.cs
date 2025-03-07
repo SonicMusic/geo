@@ -1,4 +1,7 @@
+using geo.Application.Order;
+using geo.Application.Order.Create;
 using geo.Infrastructure;
+using geo.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ApplicationDbContext>();
+builder.Services.AddScoped<CreateOrderHandler>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 
 var app = builder.Build();
 

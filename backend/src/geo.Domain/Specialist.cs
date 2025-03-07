@@ -23,6 +23,8 @@ public record Specialist
             return "Error";
         
         var specialist = input.Trim().ToLower();
+        if (_all.Any(s => s.Value == specialist) == false)
+            return Brigade03; //todo business logic
         
         return new Specialist(specialist);
     }

@@ -24,6 +24,8 @@ public record Status
             return "Error";
         
         var status = input.Trim().ToLower();
+        if (_all.Any(s => s.Value == status) == false)
+            return Open; //todo business logic
         
         return new Status(status);
     }

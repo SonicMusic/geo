@@ -10,8 +10,9 @@ public class Order
         
     }
 
-    public Order(string title, string description, string client, Specialist specialist, Status status)
+    public Order(Guid id, string title, string description, string client, Specialist specialist, Status status)
     {
+        Id = id;
         Title = title;
         Description = description;
         Client = client;
@@ -29,12 +30,14 @@ public class Order
     public DateTimeOffset Completed { get; private set; } = DateTimeOffset.MaxValue;
 
     public static Result<Order, string> Create(
+        Guid id,
         string title, 
         string description, 
         string client, 
-        Specialist specialist, 
-        Status status)
+        Specialist specialist)
     {
-        return new Order(title, description, client, specialist, status);
+        //todo validation
+        var open = Domain.Status.Create("open");
+        return new Order(id, title, description, client, specialist, open.Value);
     }
 }
