@@ -11,4 +11,10 @@
       <ProjectReference Include="..\geo.Domain\geo.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="EntityFrameworkCore.NamingConventions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.2" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    </ItemGroup>
+
 </Project>

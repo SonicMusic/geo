@@ -1,4 +1,6 @@
-﻿namespace geo.Domain;
+﻿using CSharpFunctionalExtensions;
+
+namespace geo.Domain;
 
 public class Order
 {
@@ -8,7 +10,7 @@ public class Order
         
     }
 
-    public Order(string title, string description, string client, string specialist, string status)
+    public Order(string title, string description, string client, Specialist specialist, Status status)
     {
         Title = title;
         Description = description;
@@ -17,16 +19,21 @@ public class Order
         Status = status;
     }
     
-    public Guid Id { get; set; }
-    public string Title { get; set; } = default!;
-    public string Description { get; set; } = default!;
-    public string Client { get; set; } = default!;
-    public string Specialist { get; set; } = default!;
-    public string Status { get; set; } = default!;
-    public DateTimeOffset Confirmed { get; set; } = DateTimeOffset.MinValue;
-    public DateTimeOffset Completed { get; set; } = DateTimeOffset.MaxValue;
+    public Guid Id { get; private set; }
+    public string Title { get; private set; } = default!;
+    public string Description { get; private set; } = default!;
+    public string Client { get; private set; } = default!;
+    public Specialist Specialist { get; private set; } = default!;
+    public Status Status { get; private set; } = default!;
+    public DateTimeOffset Confirmed { get; private set; } = DateTimeOffset.MinValue;
+    public DateTimeOffset Completed { get; private set; } = DateTimeOffset.MaxValue;
 
-    public static Order Create(string title, string description, string client, string specialist, string status)
+    public static Result<Order, string> Create(
+        string title, 
+        string description, 
+        string client, 
+        Specialist specialist, 
+        Status status)
     {
         return new Order(title, description, client, specialist, status);
     }

@@ -1,0 +1,16 @@
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\bin\Debug\net8.0\geo.Application.deps.json
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\bin\Debug\net8.0\geo.Application.dll
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\bin\Debug\net8.0\geo.Application.pdb
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\bin\Debug\net8.0\geo.Domain.dll
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\bin\Debug\net8.0\geo.Domain.pdb
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.csproj.AssemblyReference.cache
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.AssemblyInfoInputs.cache
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.AssemblyInfo.cs
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.csproj.CoreCompileInputs.cache
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.sourcelink.json
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Appl.5E9A055D.Up2Date
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.dll
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\refint\geo.Application.dll
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\geo.Application.pdb
+C:\Users\Sonic\RiderProjects\geo\backend\src\geo.Application\obj\Debug\net8.0\ref\geo.Application.dll
